@@ -1,0 +1,5 @@
+dist/
+demo/
+temp/
+node_modules/
+.sass-cache/
