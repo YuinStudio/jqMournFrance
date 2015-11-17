@@ -97,5 +97,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-    gulp.start('biuld:css', 'biuld:js', 'build:template');
+    gulp.start('biuld:js');
 });
