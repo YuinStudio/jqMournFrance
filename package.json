@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "jqMournFrance",
   "private": true,
-  "devDependencies": {
+  "dependencies": {
     "gulp": "",
     "gulp-concat": "~2.2.0",
     "gulp-jshint": "^1.8.4",
@@ -16,9 +16,7 @@
     "gulp-minify-css": "git://github.com/jonathanepollack/gulp-minify-css",
     "gulp-html-js-template": "https://github.com/legoheld/gulp-html-js-template.git",
     "gulp-htmlmin": "https://github.com/jonschlinkert/gulp-htmlmin.git",
-    "gulp-css-to-js": "0.0.1"
-  },
-  "dependencies": {
+    "gulp-css-to-js": "0.0.1",
     "gulp-add-src": "git+https://github.com/urish/gulp-add-src.git"
   }
 }
