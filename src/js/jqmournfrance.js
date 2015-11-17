@@ -1,12 +1,13 @@
 (function ($) {
     'use strict';
-    var defaultOpt = {
-        effect: 'hide',
-        duration: 0,
-        leaveTime: 3000
-    }, idList = {};
-
     $.fn.jqmournfrance = function (options) {
+        // set default value
+        var defaultOpt = {
+            effect: 'hide',
+            duration: 0,
+            leaveTime: 3000
+        };
+
         if (typeof options !== 'object') {
             options = {};
         }
