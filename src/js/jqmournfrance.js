@@ -16,13 +16,15 @@
         $.each(this, function () {
             var $this = $(this);
             $this.addClass('mourn-france-main-box').append(jQuery.mfTemplate.mournFrance);
-            setTimeout(function () {
-                $this.find('> .mourn-france')[options.effect](options.duration, function () {
-                    $(this).remove();
-                });
-                $this.removeClass('mourn-france-main-box');
-            }, options.leaveTime);
 
+            if (options.leaveTime > 0) {
+                setTimeout(function () {
+                    $this.find('> .mourn-france')[options.effect](options.duration, function () {
+                        $(this).remove();
+                    });
+                    $this.removeClass('mourn-france-main-box');
+                }, options.leaveTime);
+            }
 
         });
     };
