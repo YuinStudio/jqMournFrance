@@ -21,3 +21,11 @@ When window onload, then you can use the plugin.
     $('body').jqmournfrance();
     $('#demo-box').jqmournfrance();
 ```
+
+# Options
+
+Option | Type | Default | Usage
+-------|------|---------|------
+effect | string | hide | use jquery basic effect name.
+duration | number | 0 | effect duration. 
+leaveTime | number | 3000 | national flag leave time
