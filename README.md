@@ -2,6 +2,8 @@
 
 Now, You can use this jquery plugin on your website for mourning France about the terroristic attack of Paris.
 
+![http://yuin.tw](images/sample.png "http://yuin.tw")
+
 # Dependencies
 
 This plugin base on jQuery.
