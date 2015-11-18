@@ -30,7 +30,7 @@ Option | Type | Default | Usage
 -------|------|---------|------
 effect | string | hide | use jquery basic effect name.
 duration | number | 0 | effect duration. 
-leaveTime | number | 3000 | national flag leave time
+leaveTime | number | 3000 | national flag leave time, if set '-1', national flag always display.
 
 # Demo
 [http://yuinstudio.github.io/jqMournFrance/](http://yuinstudio.github.io/jqMournFrance/)
