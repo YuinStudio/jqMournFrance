@@ -2,6 +2,14 @@ all:
 	npm install
 	gulp
 
+deploy-test:
+	npm install
+	gulp
+	mv demo/index.html ./
+	mv dist/css/reset.css ./
+	mv dist/js/*.js ./
+	rm -rf demo src
+
 deploy:
 	npm install
 	gulp
