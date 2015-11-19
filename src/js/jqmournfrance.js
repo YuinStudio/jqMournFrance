@@ -18,6 +18,13 @@
             var $this = $(this);
             $this.addClass('mourn-france-main-box').append(jQuery.mfTemplate.mournFrance);
 
+            /*
+            * if target is 'body' tag, set height to document
+            * */
+            if ('BODY' === $this[0].tagName) {
+                $this.find('> .mourn-france').css('height', $(document).height());
+            }
+
             if (options.leaveTime > 0) {
                 setTimeout(function () {
                     $this.find('> .mourn-france')[options.effect](options.duration, function () {
