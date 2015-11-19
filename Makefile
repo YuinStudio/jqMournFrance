@@ -22,11 +22,10 @@ deploy:
 	git checkout -b $(VERSION)
 	git add .
 	git commit -m 'deploy'
-	git push
 	git tag $(VERSION)
 	git push --tags
-	git checkout gh-pages
-	git merge $(VERSION)
-	git commit -m 'deploy'
+	git branch -D gh-pages
+	git push origin :gh-pages
+	git checkout -b gh-pages
 	git push
 	git checkout master
