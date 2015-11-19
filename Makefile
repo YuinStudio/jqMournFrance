@@ -13,6 +13,8 @@ sample:
 	rm -rf demo src
 
 deploy:
+	git tag -D $(VERSION)
+	git branch -D $(VERSION)
 	git checkout -b $(VERSION)
 	npm install
 	gulp
