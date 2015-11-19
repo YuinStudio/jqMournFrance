@@ -13,6 +13,13 @@ sample:
 	rm -rf demo src
 
 deploy:
+	npm install
+	gulp
+	mv demo/index.html ./
+	mv dist/css/reset.css ./
+	mv dist/js/*.js ./
+	rm -rf demo src
+	git checkout -b $(VERSION)
 	git add .
 	git commit -m 'deploy'
 	git push
@@ -20,5 +27,6 @@ deploy:
 	git push --tags
 	git checkout gh-pages
 	git merge $(VERSION)
-	git commit -am 'deploy'
+	git commit -m 'deploy'
 	git push
+	git checkout master
