@@ -13,13 +13,13 @@ sample:
 	rm -rf demo src
 
 deploy:
+	git checkout -b $(VERSION)
 	npm install
 	gulp
 	mv demo/index.html ./
 	mv dist/css/reset.css ./
 	mv dist/js/*.js ./
 	rm -rf demo src
-	git checkout -b $(VERSION)
 	git add .
 	git commit -m 'deploy'
 	git tag $(VERSION)
